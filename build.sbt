@@ -11,5 +11,3 @@ libraryDependencies :=
     "net.rforge"        % "Rserve"                    % "1.8.0",
     "com.twitter"      %% "algebird-test"             % depend.versions.algebird % "test",
     "org.scalaz"       %% "scalaz-scalacheck-binding" % depend.versions.scalaz   % "test")
-
-uniformAssemblySettings
