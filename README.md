@@ -1,7 +1,7 @@
 Piped
 =====
 
-[Build Status](https://magnum.travis-ci.com/CommBank/piped.svg?token=A3xq7fpHLyey1yCrNASy&branch=master)](https://magnum.travis-ci.com/CommBank/piped)
+[![Build Status](https://travis-ci.org/CommBank/piped.svg?branch=master)](https://travis-ci.org/CommBank/piped)
 [![Gitter chat](https://badges.gitter.im/CommBank.png)](https://gitter.im/CommBank)
 
 This project contains anything to do with working with or enhancing
