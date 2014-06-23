@@ -12,17 +12,8 @@
 //   See the License for the specific language governing permissions and
 //   limitations under the License.
 
-package com.cba.omnia.piped.aggregators
+package au.com.cba.omnia.piped
 
-import com.twitter.algebird._
+import au.com.cba.omnia.piped.aggregators.AggregatorOps
 
-/**
-  *  A simple count aggregator.
-  *  It counts every value it sees. This aggregator exists so that it can be composed with other aggregators.
-  *  If you are just after a count there are probably better ways than this.
-  */
-case class CountAggregator[T]() extends Aggregator[T, Long, Long] {
-  def prepare(v: T) = 1L
-  def reduce(l: Long, r: Long) = l + r
-  def present(v: Long) = v
-}
+object Piped extends PipeOps with GroupedOps with AggregatorOps

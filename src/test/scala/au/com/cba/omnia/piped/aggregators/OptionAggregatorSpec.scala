@@ -12,14 +12,14 @@
 //   See the License for the specific language governing permissions and
 //   limitations under the License.
 
-package com.cba.omnia.piped
+package au.com.cba.omnia.piped
 package aggregators
 
 import com.twitter.algebird._
 
-import com.cba.omnia.piped.aggregators.AggregatorOps._
+import au.com.cba.omnia.piped.aggregators.AggregatorOps._
 
-import com.cba.omnia.piped.PipedSpec
+import au.com.cba.omnia.piped.PipedSpec
 
 class OptionAggregatorSpec extends PipedSpec { def is = s2"""
 Option Aggregator

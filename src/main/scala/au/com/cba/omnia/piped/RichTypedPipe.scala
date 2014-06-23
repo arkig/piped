@@ -12,7 +12,7 @@
 //   See the License for the specific language governing permissions and
 //   limitations under the License.
 
-package com.cba.omnia.piped
+package au.com.cba.omnia.piped
 
 import scalaz.ValidationNel
 

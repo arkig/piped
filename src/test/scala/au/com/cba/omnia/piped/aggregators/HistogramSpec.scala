@@ -12,16 +12,17 @@
 //   See the License for the specific language governing permissions and
 //   limitations under the License.
 
-package com.cba.omnia.piped.aggregators
+package au.com.cba.omnia.piped.aggregators
 
 import com.twitter.algebird._
 
 import org.scalacheck.Arbitrary
 import org.scalacheck.Arbitrary.arbitrary
 
-import com.cba.omnia.piped.PipedSpec
-
 import com.twitter.algebird.BaseProperties
+
+import au.com.cba.omnia.piped.PipedSpec
+
 
 class HistogramSpec extends PipedSpec { def is = s2"""
   Can create a histogram from a value                      $create
