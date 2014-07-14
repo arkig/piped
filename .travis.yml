@@ -14,14 +14,16 @@ install:
 - git clone https://github.com/CommBank/ci.git
 - chmod ugo+x ci/*
 - ci/sbt-setup.sh
+- ci/sbt-setup-version.sh
 - wget http://rforge.net/Rserve/snapshot/Rserve_1.8-0.tar.gz
 - sudo R CMD INSTALL Rserve_1.8-0.tar.gz
 - R CMD Rserve
 script:
-- sbt -Dsbt.global.base=$TRAVIS_BUILD_DIR/ci '; test; package'
+- sbt -Dsbt.global.base=$TRAVIS_BUILD_DIR/ci '; test; package' && ci/sbt-deploy.sh
+  && ci/gh-pages.sh
 after_script:
-- ci/sbt-deploy.sh
 - rm -rf ci
 env:
   global:
-    secure: UPV9hsHQ05jVoaoix7CzYaN8395BLX2w7ASYlwyiv1adbIvJnRdpxhAsmtI+FmW4So048qu8ZwoLTrvzXsGEhW75vEtf9RldbaXyMRYGOTtJkFjHkLPIB+ceJ/v9gfmp3Ase8pRNb5CjlsyGYBhj8fnHeECe5tawAiQXbwecWeM=
+  - secure: UPV9hsHQ05jVoaoix7CzYaN8395BLX2w7ASYlwyiv1adbIvJnRdpxhAsmtI+FmW4So048qu8ZwoLTrvzXsGEhW75vEtf9RldbaXyMRYGOTtJkFjHkLPIB+ceJ/v9gfmp3Ase8pRNb5CjlsyGYBhj8fnHeECe5tawAiQXbwecWeM=
+  - secure: phchz0tFsKsYyrWnAU2o5a/xZnMvgBAnHSha/CmjjF6cfZHJuSHRYzG+BrbqpOVDdOaE77YoK6IecShIiclNwTt0SDsvNzcdIn3l9319eF9oz954txm+0dCNP2G43NRdbPeNIbupA8lYDRcg36tI1jHRBNB6j9PiCwsetGPq6bc=

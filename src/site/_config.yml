@@ -1,0 +1,3 @@
+name: piped
+exclude: [Gemfile]
+markdown: kramdown

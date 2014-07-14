@@ -10,3 +10,10 @@ edged.
 
 If it is a general tool for working with scalding pipelines it should
 go here.
+
+[Scaladoc](https://commbank.github.io/piped/latest/api/index.html)
+
+Usage
+-----
+
+See https://commbank.github.com.io/piped
