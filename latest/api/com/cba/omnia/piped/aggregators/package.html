@@ -1,0 +1,278 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>aggregators - com.cba.omnia.piped.aggregators</title>
+          <meta name="description" content="aggregators - com.cba.omnia.piped.aggregators" />
+          <meta name="keywords" content="aggregators com.cba.omnia.piped.aggregators" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../../index.html';
+            var hash = 'com.cba.omnia.piped.aggregators.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../../package.html" class="extype" name="com">com</a>.<a href="../../../package.html" class="extype" name="com.cba">cba</a>.<a href="../../package.html" class="extype" name="com.cba.omnia">omnia</a>.<a href="../package.html" class="extype" name="com.cba.omnia.piped">piped</a></p>
+        <h1>aggregators</h1>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">aggregators</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="com.cba.omnia.piped.aggregators.AggregatorOps" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="AggregatorOpsextendsAnyRef"></a>
+      <a id="AggregatorOps:AggregatorOps"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="AggregatorOps.html"><span class="name">AggregatorOps</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="com.cba.omnia.piped.aggregators.AggregatorSyntax" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AggregatorSyntax[A,B,C]extendsProductwithSerializable"></a>
+      <a id="AggregatorSyntax[A,B,C]:AggregatorSyntax[A,B,C]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="AggregatorSyntax.html"><span class="name">AggregatorSyntax</span></a><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>, <span name="C">C</span>]</span><span class="params">(<span name="agg">agg: <span class="extype" name="com.twitter.algebird.Aggregator">Aggregator</span>[<span class="extype" name="com.cba.omnia.piped.aggregators.AggregatorSyntax.A">A</span>, <span class="extype" name="com.cba.omnia.piped.aggregators.AggregatorSyntax.B">B</span>, <span class="extype" name="com.cba.omnia.piped.aggregators.AggregatorSyntax.C">C</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="com.cba.omnia.piped.aggregators.CountAggregator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CountAggregator[T]extendsAggregator[T,Long,Long]withProductwithSerializable"></a>
+      <a id="CountAggregator[T]:CountAggregator[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="CountAggregator.html"><span class="name">CountAggregator</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="params">()</span><span class="result"> extends <span class="extype" name="com.twitter.algebird.Aggregator">Aggregator</span>[<span class="extype" name="com.cba.omnia.piped.aggregators.CountAggregator.T">T</span>, <span class="extype" name="scala.Long">Long</span>, <span class="extype" name="scala.Long">Long</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt"> A simple count aggregator.</p>
+    </li><li name="com.cba.omnia.piped.aggregators.Histogram" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Histogram[V]extendsProductwithSerializable"></a>
+      <a id="Histogram[V]:Histogram[V]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Histogram.html"><span class="name">Histogram</span></a><span class="tparams">[<span name="V">V</span>]</span><span class="params">(<span name="histogram">histogram: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="com.cba.omnia.piped.aggregators.Histogram.V">V</span>, <span class="extype" name="scala.Long">Long</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="com.cba.omnia.piped.aggregators.HistogramAggregator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="HistogramAggregator[V]extendsMonoidAggregator[V,com.cba.omnia.piped.aggregators.Histogram[V],com.cba.omnia.piped.aggregators.Histogram[V]]withProductwithSerializable"></a>
+      <a id="HistogramAggregator[V]:HistogramAggregator[V]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="HistogramAggregator.html"><span class="name">HistogramAggregator</span></a><span class="tparams">[<span name="V">V</span>]</span><span class="params">()</span><span class="result"> extends <span class="extype" name="com.twitter.algebird.MonoidAggregator">MonoidAggregator</span>[<span class="extype" name="com.cba.omnia.piped.aggregators.HistogramAggregator.V">V</span>, <a href="Histogram.html" class="extype" name="com.cba.omnia.piped.aggregators.Histogram">Histogram</a>[<span class="extype" name="com.cba.omnia.piped.aggregators.HistogramAggregator.V">V</span>], <a href="Histogram.html" class="extype" name="com.cba.omnia.piped.aggregators.Histogram">Histogram</a>[<span class="extype" name="com.cba.omnia.piped.aggregators.HistogramAggregator.V">V</span>]] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="com.cba.omnia.piped.aggregators.HistogramMonoid" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="HistogramMonoid[V]extendsMonoid[com.cba.omnia.piped.aggregators.Histogram[V]]"></a>
+      <a id="HistogramMonoid[V]:HistogramMonoid[V]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="HistogramMonoid.html"><span class="name">HistogramMonoid</span></a><span class="tparams">[<span name="V">V</span>]</span><span class="result"> extends <span class="extype" name="com.twitter.algebird.Monoid">Monoid</span>[<a href="Histogram.html" class="extype" name="com.cba.omnia.piped.aggregators.Histogram">Histogram</a>[<span class="extype" name="com.cba.omnia.piped.aggregators.HistogramMonoid.V">V</span>]]</span>
+      </span>
+      </h4>
+      
+    </li><li name="com.cba.omnia.piped.aggregators.LimitedHistogram" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LimitedHistogram[V]extendsLimitedSizeHistogram[V]withProductwithSerializable"></a>
+      <a id="LimitedHistogram[V]:LimitedHistogram[V]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="LimitedHistogram.html"><span class="name">LimitedHistogram</span></a><span class="tparams">[<span name="V">V</span>]</span><span class="params">(<span name="histogram">histogram: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="com.cba.omnia.piped.aggregators.LimitedHistogram.V">V</span>, <span class="extype" name="scala.Long">Long</span>]</span>)</span><span class="result"> extends <a href="LimitedSizeHistogram.html" class="extype" name="com.cba.omnia.piped.aggregators.LimitedSizeHistogram">LimitedSizeHistogram</a>[<span class="extype" name="com.cba.omnia.piped.aggregators.LimitedHistogram.V">V</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="com.cba.omnia.piped.aggregators.LimitedSizeHistogram" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="LimitedSizeHistogram[V]extendsAnyRef"></a>
+      <a id="LimitedSizeHistogram[V]:LimitedSizeHistogram[V]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="LimitedSizeHistogram.html"><span class="name">LimitedSizeHistogram</span></a><span class="tparams">[<span name="V">V</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">A losey histogram that only keeps track of less than limit number
+of items.</p>
+    </li><li name="com.cba.omnia.piped.aggregators.LimitedSizeHistogramAggregator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LimitedSizeHistogramAggregator[V]extendsMonoidAggregator[V,com.cba.omnia.piped.aggregators.LimitedSizeHistogram[V],com.cba.omnia.piped.aggregators.LimitedSizeHistogram[V]]withProductwithSerializable"></a>
+      <a id="LimitedSizeHistogramAggregator[V]:LimitedSizeHistogramAggregator[V]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="LimitedSizeHistogramAggregator.html"><span class="name">LimitedSizeHistogramAggregator</span></a><span class="tparams">[<span name="V">V</span>]</span><span class="params">(<span name="monoid">monoid: <a href="LimitedSizeHistogramMonoid.html" class="extype" name="com.cba.omnia.piped.aggregators.LimitedSizeHistogramMonoid">LimitedSizeHistogramMonoid</a>[<span class="extype" name="com.cba.omnia.piped.aggregators.LimitedSizeHistogramAggregator.V">V</span>]</span>)</span><span class="result"> extends <span class="extype" name="com.twitter.algebird.MonoidAggregator">MonoidAggregator</span>[<span class="extype" name="com.cba.omnia.piped.aggregators.LimitedSizeHistogramAggregator.V">V</span>, <a href="LimitedSizeHistogram.html" class="extype" name="com.cba.omnia.piped.aggregators.LimitedSizeHistogram">LimitedSizeHistogram</a>[<span class="extype" name="com.cba.omnia.piped.aggregators.LimitedSizeHistogramAggregator.V">V</span>], <a href="LimitedSizeHistogram.html" class="extype" name="com.cba.omnia.piped.aggregators.LimitedSizeHistogram">LimitedSizeHistogram</a>[<span class="extype" name="com.cba.omnia.piped.aggregators.LimitedSizeHistogramAggregator.V">V</span>]] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="com.cba.omnia.piped.aggregators.LimitedSizeHistogramMonoid" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LimitedSizeHistogramMonoid[V]extendsMonoid[com.cba.omnia.piped.aggregators.LimitedSizeHistogram[V]]withProductwithSerializable"></a>
+      <a id="LimitedSizeHistogramMonoid[V]:LimitedSizeHistogramMonoid[V]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="LimitedSizeHistogramMonoid.html"><span class="name">LimitedSizeHistogramMonoid</span></a><span class="tparams">[<span name="V">V</span>]</span><span class="params">(<span name="limit">limit: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result"> extends <span class="extype" name="com.twitter.algebird.Monoid">Monoid</span>[<a href="LimitedSizeHistogram.html" class="extype" name="com.cba.omnia.piped.aggregators.LimitedSizeHistogram">LimitedSizeHistogram</a>[<span class="extype" name="com.cba.omnia.piped.aggregators.LimitedSizeHistogramMonoid.V">V</span>]] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="com.cba.omnia.piped.aggregators.OverLimitHistogram" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OverLimitHistogram[V]extendsLimitedSizeHistogram[V]withProductwithSerializable"></a>
+      <a id="OverLimitHistogram[V]:OverLimitHistogram[V]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="OverLimitHistogram.html"><span class="name">OverLimitHistogram</span></a><span class="tparams">[<span name="V">V</span>]</span><span class="params">()</span><span class="result"> extends <a href="LimitedSizeHistogram.html" class="extype" name="com.cba.omnia.piped.aggregators.LimitedSizeHistogram">LimitedSizeHistogram</a>[<span class="extype" name="com.cba.omnia.piped.aggregators.OverLimitHistogram.V">V</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="com.cba.omnia.piped.aggregators.AggregatorOps" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AggregatorOps"></a>
+      <a id="AggregatorOps:AggregatorOps"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="AggregatorOps$.html"><span class="name">AggregatorOps</span></a><span class="result"> extends <a href="AggregatorOps.html" class="extype" name="com.cba.omnia.piped.aggregators.AggregatorOps">AggregatorOps</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="com.cba.omnia.piped.aggregators.Histogram" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Histogram"></a>
+      <a id="Histogram:Histogram"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Histogram$.html"><span class="name">Histogram</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="com.cba.omnia.piped.aggregators.LimitedSizeHistogramAggregator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LimitedSizeHistogramAggregator"></a>
+      <a id="LimitedSizeHistogramAggregator:LimitedSizeHistogramAggregator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="LimitedSizeHistogramAggregator$.html"><span class="name">LimitedSizeHistogramAggregator</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../../../lib/template.js"></script>
+    </body>
+      </html>

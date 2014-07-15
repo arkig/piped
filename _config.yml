@@ -1,0 +1,4 @@
+name: piped
+exclude: [Gemfile]
+markdown: kramdown
+releaseVersion:  "1.8.0-20140715013536-dd8fba0"
