@@ -41,7 +41,7 @@ RichErrorPipe
 
   def handleErrors = prop { (input: List[ValidationNel[String, Int]]) =>
     class TestJob(args: Args) extends Job(args) with PipeOps {
-      IterablePipe(input, flowDef, mode)
+      IterablePipe(input)
         .handleError("fakeError")
         .write(TypedTsv[Int]("fakeOutput"))
     }
@@ -68,7 +68,7 @@ RichErrorPipe
 
 
     class TestJob(args: Args) extends Job(args) with PipeOps {
-      val pipe = IterablePipe(input, flowDef, mode)
+      val pipe = IterablePipe(input)
         .handleError("fakeError", false)
         .write(TypedTsv[Int]("fakeOutput"))
     }

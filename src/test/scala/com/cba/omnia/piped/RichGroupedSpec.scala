@@ -48,7 +48,7 @@ RichKeyedList
 
   def mapValuesPartialGrouped = prop { (input: List[(Int, Int)]) =>
     class TestJob(args: Args) extends Job(args) with GroupedOps {
-      IterablePipe(input, flowDef, mode)
+      IterablePipe(input)
         .group
         .mapValuesPartialGrouped(_ => false) { case x if x % 3 == 0 => true }
         .toTypedPipe
@@ -69,7 +69,7 @@ RichKeyedList
     val input = data.map { case (k, v) => (k % 2, v  % 1000) }
 
     class TestJob(args: Args) extends Job(args) with GroupedOps {
-      IterablePipe(input, flowDef, mode)
+      IterablePipe(input)
         .group
         .mapValues(_.toString)
         .processValuesWithR(rCommand1, _.map(x => Validated.safe(x.toInt)))
@@ -93,7 +93,7 @@ RichKeyedList
 
   def processValuesWithRError = {
     class TestJob(args: Args) extends Job(args) with GroupedOps {
-      IterablePipe(List((1,2)), flowDef, mode)
+      IterablePipe(List((1,2)))
         .group
         .mapValues(_.toString)
         .processValuesWithR(rCommand2, _.map(x => Validated.safe(x.toInt)))
@@ -124,7 +124,7 @@ RichKeyedList
     }
 
     class TestJob(args: Args) extends Job(args) with GroupedOps {
-      IterablePipe(input, flowDef, mode)
+      IterablePipe(input)
         .group
         .processValuesWithRCSV(rCommand3, _.map(parse))
         .toTypedPipe
@@ -147,7 +147,7 @@ RichKeyedList
 
   def mapValuesPartial = prop { (input: List[(Int, Int)]) =>
     class TestJob(args: Args) extends Job(args) with GroupedOps {
-      IterablePipe(input, flowDef, mode)
+      IterablePipe(input)
         .group
         .mapValuesPartial(_ => false) { case x if x % 3 == 0 => true }
         .toTypedPipe

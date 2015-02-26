@@ -21,7 +21,8 @@ import scala.collection.mutable.ListBuffer
 import java.util.concurrent.Executors
 import java.io.{BufferedReader, FileReader, PrintWriter}
 
-import com.twitter.scalding.{Duration => _, _}, TDsl._
+import com.twitter.scalding.{Duration => _, Execution => ScaldExec}
+import com.twitter.scalding.TDsl._
 import com.twitter.scalding.typed.{Grouped, UnsortedGrouped, KeyedListLike}
 
 import scalaz._, Scalaz._
