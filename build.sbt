@@ -19,7 +19,7 @@ uniformDependencySettings
 libraryDependencies :=
   depend.scaldingproject() ++
   Seq(
-    "au.com.cba.omnia" %% "omnitool-core"             % "1.5.0-20150113041805-fef6da5",
+    "au.com.cba.omnia" %% "omnitool-core"             % "1.6.0-20150211060329-d0909d8-CDH5",
     "net.rforge"        % "REngine"                   % "1.8.0",
     "net.rforge"        % "Rserve"                    % "1.8.0",
     "com.twitter"      %% "algebird-test"             % depend.versions.algebird % "test"
