@@ -1,4 +1,4 @@
 name: piped
 exclude: [Gemfile]
 markdown: kramdown
-releaseVersion:  "1.10.0-20150317014214-3125d57"
+releaseVersion:  "1.11.0-20150318040755-068514d"
